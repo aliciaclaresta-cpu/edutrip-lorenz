@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <style>
+            body{
+                background-color: #faf3dd;
+                width:100%;
+            }
+            #divbar{width:100%;
+                height:30px;
+                position:fixed;
+                top:0px;
+            }
+            .div1{
+                padding-left:50px;
+                padding-right:50px;
+            }
+            .h1-1{
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                color:#5b6946;
+            }
+            .h1-2{
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                color: #faf3dd;
+            }
+            .h1-3{
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                color:#5b6946;
+                text-align: center;
+            }
+            p{
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                text-align: justify;
+            }
+            .p1{
+                color:black;
+            }
+            .p2{
+                color:#fbf3dd;
+            }
+            table{
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 20px;
+                width: 90%;
+                padding-top: 5px;
+                padding-bottom: 20px;
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+            th{
+                color:#faf3dd;
+                font-size:larger;
+                padding-top: 10px;
+            }
+            .table1{
+                background-color: #74825e;
+            }
+            .table2{
+                background-color: #43512f;
+            }
+            #table3{
+                width:100%;
+                border-collapse: collapse;
+            }
+            .s1{
+                background-color: #e0e0e0;
+                border-top-left-radius: 35px;
+                border-top-right-radius: 35px;
+                width:35%;
+            }
+            .s2{
+                background-color: white;
+                border-bottom-right-radius: 35px;
+                border-bottom-left-radius: 35px;
+                padding:20px;
+                padding-left: 40px;
+                padding-right: 40px;
+                width:35%;
+            }
+            #s3{
+                width:10%;
+            }
+            .s4{
+                width:5%;
+            }
+            #bar{
+                background-color: #43512f;
+                width:100%;
+                border-radius:0;
+                opacity: 0.9;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                color:#fbf3dd;
+            }
+            .img1{
+                border-radius: 35px;
+                width:22.5%;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            .img2{
+                border-radius: 35px;
+                width:45%;
+                margin-left: 30px;
+                margin-right: 20px;
+            }
+            .img3{
+                border-radius: 35px;
+                width:18%;
+                margin-left: 10px;
+                margin-right: 5px;
+            }
+            .img4{
+                width:50%;
+                padding-left: 35px;
+                padding-right: 35px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+            .timeline {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 40px;
+                position: relative;
+                padding: 50px;
+                gap: 40px;
+                align-items: start;
+            }
+
+            .box {
+                background: #43512f;
+                color: #faf3dd;
+                border-radius: 20px;
+                padding-left: 30px;
+                padding-right: 30px;
+                padding-bottom: 15px;
+                padding-top: 15px;
+                position: relative;
+                min-height: 235px;
+                transition:transform 0.3s ease;
+            }
+
+            .box:hover{
+                transform: scale(1.2);
+            }
+
+            .box h3 {
+                margin-top: 40px;
+            }
+
+            .circle {
+                position: absolute;
+                top: 80px;
+                left: 20px;
+                background: #a9261f;
+                color: #faf3dd;
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: bold;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+
+            h2{
+                padding-top: 0;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+            }
+
+            .txt{
+                padding-top:80px;
+                line-height:20px;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                text-align: left;
+            }
+            .txt2{
+                line-height:10px;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                text-align: left;
+            }
+            .txt3{
+                padding-top:80px;
+                line-height:10px;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                text-align: left;
+            }
+            .banner{
+                width:100%;
+                margin:0;
+                padding-top: 0;
+                padding-bottom: 0;
+                padding-left: 0;
+                padding-right: 0;
+            }
+            
+            #container1{
+                background-color: #43512f;
+                padding:70px
+            }
+            #spacing{
+                height:150px;
+            }
+        </style>
+    </head>
+    <body>
+		<div id="divbar">
+			<table id="bar">
+				<tr>
+					<th><a href="edutriphome.html">Home</a></th>
+                    <th><a href="place.html">Places to visit</a></th>
+                    <th><a href="food.html">Foodies</a></th>
+                    <th><a href="uni.html">Universities</a></th>
+                    <th><a href="sites.html">Cultural sites</a></th>
+                    <th><a href="others.html">Other activities</a></th>
+				</tr>
+			</table>
+		</div>
+        <img src="bannerhome.png" alt="Banner" class="banner">
+        <div class="div1">
+            <h1 class="h1-1">About us:</h1>
+            <p>Hello everyone! We are Grade 11 students from Santa Laurensia who participated in an educational trip (Edutrip) to Japan. Through this website, we aim to share our experiences exploring the educational and cultural beauty of Japan. During our journey, we visited various places that not only offered stunning views but also provided meaningful learning opportunities. From historical landmarks to modern innovations, each destination gave us new insights and perspectives. We hope this website can inspire others to see travel not only as leisure, but also as a valuable educational experience.</p>
+        </div>
+        <br>
+        <div class="div1">
+            <h1 class="h1-1">Timeline:</h1>
+            <br>
+            <div class="timeline">
+                <div class="box">
+                    <h2>Day 0</h2>
+                    <div class="circle">D-0</div>
+                    <p class="txt">Flight to Japan</p>
+                </div>
+
+                <div class="box">
+                    <h2>Day 1</h2>
+                    <div class="circle">D-1</div>
+                    <a href="uni.html#apu"><p class="txt">Ritsumeikan Asia Pacific University</p></a>
+                </div>
+
+                <div class="box">
+                    <h2>Day 2</h2>
+                    <div class="circle">D-2</div>
+                    <a href="uni.html#kyu"><p class="txt3">Kyushu University</p></a>
+                    <a href="others.html#TIF"><p class="txt2">Toyota Factory</p></a>
+                    <a href="place.html#CC"><p class="txt2">Canal City</p></a>
+                </div>
+                
+                <div class="box">
+                    <h2>Day 3</h2>
+                    <div class="circle">D-3</div>
+                    <a href="sites.html#KC"><p class="txt3">Kumamoto Castle</p></a>
+                    <a href="others.html#HS"><p class="txt2">Homestay</p></a>
+                </div>
+
+                <div class="box">
+                    <h2>Day 4</h2>
+                    <div class="circle">D-4</div>
+                    <a href="others.html#HS"><p class="txt">Homestay</p></a>
+                </div>
+
+                <div class="box">
+                    <h2>Day 5</h2>
+                    <div class="circle">D-5</div>
+                    <p class="txt">Flight Kagoshima → Tokyo</p>
+                </div>
+
+                <div class="box">
+                    <h2>Day 6</h2>
+                    <div class="circle">D-6</div>
+                    <a href="sites.html#AST"><p class="txt">Asakusa Senso-ji Temple</p></a>
+                    <a href="place.html#shi"><p class="txt2">Shibuya</p></a>
+                </div>
+                
+                <div class="box">
+                    <h2>Day 7</h2>
+                    <div class="circle">D-7</div>
+                    <a href="others.html#WMC"><p class="txt">Tokyo Waste Management Center</p></a>
+                    <a href="uni.html#keio"><p class="txt2">KEIO University</p></a>
+                    <a href="place.html#aki"><p class="txt2">Akihabara</p></a>
+                </div>
+
+                <div class="box">
+                    <h2>Day 8</h2>
+                    <div class="circle">D-8</div>
+                    <p class="txt">St. Anselm’s Meguro Church</p>
+                    <a href="place.html#shi"><p class="txt2">Shibuya</p></a>
+                </div>
+
+                <div class="box">
+                    <h2>Day 9</h2>
+                    <div class="circle">D-9</div>
+                    <p class="txt3">Komazawa School</p>
+                    <a href="uni.html#to"><p class="txt2">Tokyo University</p></a>
+                    <a href="place.html#ODC"><p class="txt2">Odaiba</p></a>
+                </div>
+
+                <div class="box">
+                    <h2>Day 10</h2>
+                    <div class="circle">D-10</div>
+                    <p class="txt">Flight Tokyo → Jakarta</p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <a  href="place.html">
+            <table class="table1">
+                <tr>
+                    <td>
+                        <h1 class="h1-2">Places to visit:</h1>
+                        <hr>
+                        <br>
+                        <img src="Canalcity1.png" alt="Canal City Fukuoka" class="img1">
+                        <img src="Shibuya1.png" alt="Shibuya" class="img1">
+                        <img src="Akihabara1.png" alt="Akihabara" class="img1">
+                        <img src="DiverCity1.png" alt="Odaiba Diver City" class="img1">
+                    </td>
+                </tr>
+            </table>
+        </a>
+        <br>
+        <br>
+        <a href="food.html">
+            <table class="table2">
+                <tr>
+                    <td>
+                        <h1 class="h1-2">Foodies:</h1>
+                        <hr>
+                        <br>
+                        <img src="Ramen1.png" alt="Ramen" class="img1">
+                        <img src="gyoza1.png" alt="Gyoza" class="img1">
+                        <img src="horsemeat1.png" alt="Horse Meat" class="img1">
+                        <img src="shrimp1.png" alt="Shrimp" class="img1">
+                    </td>
+                </tr>
+            </table>
+        </a>
+        <br>
+        <br>
+        <a href="uni.html">
+            <table class="table1">
+                <tr>
+                    <td>
+                        <h1 class="h1-2">Universities:</h1>
+                        <hr>
+                        <br>
+                        <img src="APU1.png" alt="Ritsumeikan APU" class="img1">
+                        <img src="KyushuUni1.png" alt="Kyushu University" class="img1">
+                        <img src="KEIO1.png" alt="KEIO University" class="img1">
+                        <img src="TokyoUni1.png" alt="Tokyo University" class="img1">
+                    </td>
+                </tr>
+            </table>
+        </a>
+        <br>
+        <br>
+        <a href="sites.html">
+            <table class="table2">
+                <tr>
+                    <td>
+                        <h1 class="h1-2">Cultural sites: </h1>
+                        <hr>
+                        <br>
+                        <img src="Kumamotocastle1.png" alt="Kumamoto Castle" class="img2">
+                        <img src="Asakusa1.png" alt="Asakusa" class="img2">
+                    </td>
+                </tr>
+            </table>
+        </a>
+        <br>
+        <br>
+        <a href="others.html">
+            <table class="table1">
+                <tr>
+                    <td>
+                        <h1 class="h1-2">Other activities:</h1>
+                        <hr>
+                        <br>
+                        <img src="Homestay1.png" alt="Homestay" class="img3">
+                        <img src="Toyota1.png" alt="Toyota Industrial Factory" class="img3">
+                        <img src="DisasterPrevention1.png" alt="Disaster Prevention Center" class="img3">
+                        <img src="WasteManagement1.png" alt="Tokyo Waste Management Center" class="img3">
+                        <img src="Miraikan1.png" alt="Miraikan Science Museum" class="img3">
+                    </td>
+                </tr>
+            </table>
+        </a>
+        <div id="spacing"></div>
+        <div id="container1">
+            <h1 class="h1-2">More about us:</h1>
+            <hr>
+            <br>
+            <table id="table3">
+                <tr>
+                    <td rowspan="2" class="s4"></td>
+                    <td class="s1"><img src="alicia.jpg" alt="Alicia" class="img4"></td>
+                    <td rowspan="2" id="s3"></td>
+                    <td class="s1"><img src="kayleen.JPG" alt="Kayleen" class="img4"></td>
+                    <td rowspan="2" class="s4"></td>
+                </tr>
+                <tr>
+                    <td class="s2">
+                        <h2 class="h1-3">Alicia</h2>
+                        <p><b>School: </b>Santa Laurensia Alam Sutera</p>
+                        <p><b>Email: </b><a href="mailto:alicia.claresta@santa-laurensia.sch.id">alicia.claresta@santa-laurensia.sch.id</p>
+                    </td>
+                    <td class="s2">
+                        <h2 class="h1-3">Kayleen</h2>
+                        <p><b>School: </b>Santa Laurensia Alam Sutera</p>
+                        <p><b>Email: </b><a href="mailto:kayleen.h@santa-laurensia.sch.id">kayleen.h@santa-laurensia.sch.id</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

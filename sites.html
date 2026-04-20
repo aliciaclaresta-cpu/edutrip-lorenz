@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Cultural Sites</title>
+        <style>
+            body{
+                background-color: #faf3dd;
+                width:100%;
+            }
+            #divbar{width:100%;
+                height:30px;
+                position:fixed;
+                top:0px;
+            }
+            .container1{
+                display: flex;
+                gap: 3rem;
+                padding-right: 50px;
+                padding-left: 50px;
+            }
+            #container2{
+                background-color: #74825e;
+                border-radius: 50px;
+                margin-left: auto;
+                margin-right: auto;
+                width: 90%;
+                padding:20px;
+            }
+            .container3{
+                background-color: #faf3dd;
+                border-radius: 50px;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 30px;
+            }
+            #container4{
+                background-color: #43512f;
+                width:100%;
+                padding:70px
+            }
+            .div1{
+                padding-left:50px;
+                padding-right:50px;
+                width:60%;
+
+            }
+            .h1-1{
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                color:#5b6946;
+                
+                padding-right: 50px;
+                padding-left: 50px;
+            }
+            .h1-2{
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                color: #faf3dd;
+            }
+            p{
+                text-align: justify;
+            }
+            .p1{
+                color:black;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+            .p2{
+                color:#fbf3dd;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+            li{
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+            table{
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 20px;
+                width: 90%;
+                padding-top: 5px;
+                padding-bottom: 20px;
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+            th{
+                color:#faf3dd;
+                font-size:larger;
+                padding-top: 10px;
+            }
+            #bar{
+                background-color: #43512f;
+                width:100%;
+                border-radius:0;
+                opacity: 0.9;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                color:#fbf3dd;
+            }
+            .img1{
+                width:270px;
+                transition:transform 0.3s ease;
+            }
+
+            .img1:hover{
+                transform: scale(1.2);
+            }
+            .banner{
+                width:100%;
+                margin:0;
+                padding-top: 0;
+                padding-bottom: 0;
+                padding-left: 0;
+                padding-right: 0;
+            }
+            #vid{
+                width:500px;
+            }
+            
+            .slider-container {
+                width:1000px; 
+                height:600px;
+                overflow:hidden; 
+                margin:left;
+            }
+
+            .slider-wrapper {
+                display:flex;
+                width:1000px; 
+                animation:slide 16s infinite; 
+            }
+
+            .slider-wrapper img {
+                width: 1000px; 
+            }
+
+            @keyframes slide {
+                0% { transform: translateX(0); }
+                20% { transform: translateX(0); }
+                25% { transform: translateX(-100%); }
+                45% { transform: translateX(-100%); }
+                50% { transform: translateX(-200%); }
+                70% { transform: translateX(-200%); }
+                75% { transform: translateX(-300%); }
+                95% { transform: translateX(-300%); }
+                100% { transform: translateX(0); }
+            }
+
+
+        </style>
+    </head>
+    <body>
+		<div id="divbar">
+			<table id="bar">
+				<tr>
+					<th><a href="edutriphome.html">Home</a></th>
+                    <th><a href="place.html">Places to visit</a></th>
+                    <th><a href="food.html">Foodies</a></th>
+                    <th><a href="uni.html">Universities</a></th>
+                    <th><a href="sites.html">Cultural sites</a></th>
+                    <th><a href="others.html">Other activities</a></th>
+				</tr>
+			</table>
+		</div>
+        
+        <img src="bannersite.png" alt="Banner" class="banner">
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div id="container2">
+            <br>
+            <div class="container1"  id="KC">
+                <div>
+                    <a href="#gkc"><img src="kumaicon.png" alt="kumamoto" class="img1"></a>
+                </div>
+                <div class="container3">
+                    <h1 class="h1-1">Kumamoto Castle</h1>
+                    <p class="p1">The iconic Kumamoto castle that we saw during the trip was completed in 1607 by Kato Kiyomasa, the first daimyo (feudal lord) of the castle, with great effort and the latest technology. The whole castle has partially turned into a museum, with artifacts stored inside the sealed glass with a description plate on each and every one of it. We learn the unique architecture of Kumamoto Castle, many historical clues remain about how feudal lords lived during the Edo Period.</p> 
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="container1" id="AST">
+                <div class="container3">
+                    <h1 class="h1-1">Asakusa</h1>
+                    <p class="p1">Sensoji also known as Asakusa Kannon Temple is a Buddhist temple located in Asakusa. It has become one of the most popular tourist spot and the place was filled with colorful stalls and a huge temple at the very end. The Temple houses the small golden image of Kannon and the iconic massive red lantern. There are a lot souveniers, snacks, and there is even a convenience store nearby!</p> 
+                </div>
+                <div>
+                    <a href="#ga"><img src="asakusaicon.png" alt="asakusa" class="img1"></a>
+                </div>
+            </div>
+            <br>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div id="container4">
+            <h1 class="h1-2">Picture Gallery</h1>
+            <hr>
+            <br>
+            <h1 class="h1-2" id="gkc">Kumamoto Castle</h1>
+            <div class="carousel">
+                <div class="slider-container">
+                    <div class="slider-wrapper">
+                        <img src="kuma1.jpg" alt="Slide 1">
+                        <img src="kuma2.jpg" alt="Slide 2">
+                        <img src="kuma3.jpg" alt="Slide 3">
+                        <img src="kuma4.jpg" alt="Slide 4">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <h1 class="h1-2" id="ga">Asakusa Senso-ji Temple</h1>
+            <div class="carousel">
+                <div class="slider-container">
+                    <div class="slider-wrapper">
+                        <img src="senso1.jpg" alt="Slide 1">
+                        <img src="senso2.jpg" alt="Slide 2">
+                        <img src="senso3.jpg" alt="Slide 3">
+                        <img src="senso4.jpg" alt="Slide 4">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
